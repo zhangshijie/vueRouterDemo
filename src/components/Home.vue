@@ -7,10 +7,10 @@
     <div>
       <ul class="nav nav-tabs">
         <li>
-          <router-link :to="{path: '/home/message'}" >Message</router-link>
+          <router-link :to="{name: 'messages'}" >Message</router-link>
         </li>
         <li>
-          <router-link :to="{path: '/home/news'}" >News</router-link>
+          <router-link :to="{name: 'news'}" >News</router-link>
         </li>
       </ul>
       <router-view></router-view>

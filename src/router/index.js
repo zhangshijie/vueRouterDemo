@@ -16,10 +16,12 @@ export default new Router({
       children: [
         {
           path: '/home/message',
+          name: 'messages',
           component: Message
         },
         {
           path: '/home/news',
+          name: 'news',
           component: New
         }
       ]
