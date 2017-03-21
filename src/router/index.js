@@ -29,7 +29,19 @@ export default new Router({
     {
       path: '/home',
       name: 'Home',
-      component: Home
+      component: Home,
+      children: [
+        {
+          path: '/home/message',
+          name: 'messages',
+          component: Message
+        },
+        {
+          path: '/home/news',
+          name: 'news',
+          component: New
+        }
+      ]
     },
     {
       path: '/about',
